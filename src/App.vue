@@ -3,8 +3,6 @@ import Plane from './components/Plane.vue';
 import { onMounted } from 'vue';
 
 onMounted(() => {
-  let svg = document.querySelectorAll('svg');
-
   let paths = document.querySelectorAll('path');
 
   fillSvgPaths();
