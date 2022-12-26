@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import Plane from './components/Plane.vue';
-import { onMounted } from 'vue';
+import DickButt from "./components/DickButt.vue";
+import { onMounted } from "vue";
 
 onMounted(() => {
-  let paths = document.querySelectorAll('path');
+  let paths = document.querySelectorAll("path");
 
   fillSvgPaths();
 
-  document.addEventListener('scroll', fillSvgPaths);
+  document.addEventListener("scroll", fillSvgPaths);
 
   function fillSvgPaths() {
     let scrollPercentage =
@@ -33,18 +33,18 @@ onMounted(() => {
 
 <template>
   <section>
-    <h1>eheh</h1>
+    <h1>Plz scroll</h1>
   </section>
 
   <section>
-    <h1>They go so fast</h1>
+    <h1>Faster!</h1>
   </section>
 
   <section>
     <h1>EHEH</h1>
   </section>
 
-  <Plane />
+  <DickButt />
 </template>
 
 <style scoped></style>
