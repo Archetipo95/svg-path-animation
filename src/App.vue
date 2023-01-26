@@ -20,12 +20,12 @@ onMounted(() => {
 
       let pathLength = path.getTotalLength();
 
-      path.style.strokeDasharray = pathLength;
-      path.style.strokeDashoffset = pathLength;
+      path.style.strokeDasharray = "" + pathLength;
+      path.style.strokeDashoffset = "" + pathLength;
 
       let drawLength = pathLength * scrollPercentage;
 
-      path.style.strokeDashoffset = pathLength - drawLength;
+      path.style.strokeDashoffset = "" + (pathLength - drawLength);
     }
   }
 });
